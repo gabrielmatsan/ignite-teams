@@ -3,13 +3,11 @@ import styled from 'styled-components/native';
 
 export const Container = styled.SafeAreaView`
   flex: 1;
-  background-color: ${({ theme }) => theme.colors.background};
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  background-color: ${({ theme }) => theme.COLORS.GRAY_600};
+  padding: 24px;
 `;
 
 export const Title = styled.Text`
-  color: #fff;
+  color: ${({ theme }) => theme.COLORS.WHITE};
   font-size: 32px;
 `;

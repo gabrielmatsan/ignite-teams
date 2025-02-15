@@ -1,8 +1,9 @@
-import 'styled-components/native'
+// src/styles/styled.d.ts
+import 'styled-components';
 import theme from '@theme/theme-dark';
 
-declare module 'styled-components/native' {
-type ThemeType = typeof theme;
-
-interface DefaultTheme extends ThemeType {}
+declare module 'styled-components' {
+  type ThemeType = typeof theme;
+  
+  export interface DefaultTheme extends ThemeType {}
 }

@@ -1,3 +1,5 @@
+// src/theme/theme-dark.ts
+
 const theme = {
   COLORS: {
     WHITE: '#FFFFFF',

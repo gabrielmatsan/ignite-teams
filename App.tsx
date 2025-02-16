@@ -6,7 +6,7 @@ import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/
 import theme from '@theme/theme-dark';
 
 import { StatusBar } from 'react-native';
-import { NewGroup } from '@screens/NewGroup';
+import { Players } from '@screens/Players';
 
 
 export default function App() {
@@ -22,7 +22,7 @@ export default function App() {
       translucent
       />
       {/* Caso a fonte não esteja carregada, exibe um indicador de carregamento */}
-      {fontsLoaded ? <NewGroup /> : <Loading/>}
+      {fontsLoaded ? <Players /> : <Loading/>}
     </ThemeProvider>
   );
 }

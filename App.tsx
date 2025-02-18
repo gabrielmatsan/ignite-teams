@@ -7,6 +7,7 @@ import theme from '@theme/theme-dark';
 
 import { StatusBar } from 'react-native';
 import { Players } from '@screens/Players';
+import { Routes } from '@routes/index';
 
 
 export default function App() {
@@ -22,7 +23,7 @@ export default function App() {
       translucent
       />
       {/* Caso a fonte não esteja carregada, exibe um indicador de carregamento */}
-      {fontsLoaded ? <Players /> : <Loading/>}
+      {fontsLoaded ? <Routes /> : <Loading/>}
     </ThemeProvider>
   );
 }
